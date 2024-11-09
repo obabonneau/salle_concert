@@ -1,0 +1,163 @@
+/*********************************/
+/* STYLE PRESENTATION 4 ARTISTES */
+/*********************************/
+.sectionPresentation {
+    padding: 0em 1em 1em 1em;
+
+    background-color: #FFFFFF;
+}
+
+.conteneurArtiste {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxArtiste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.boxArtiste h2 {
+    font-size: 1em;
+}
+
+/*****************************/
+/* STYLE ACTUALITES ET VIDEO */
+/*****************************/
+.sectionActuVideo {
+    padding: 1em;
+
+    background-color: #303030;
+}
+
+/* ACTUALITES */ 
+.conteneurActualite {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.boxActualite h3, .boxActualite p {
+    color: #FFFFFF;
+}
+
+/* VIDEO */
+.video h3 {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.video iframe {
+    width: 100%;
+    height: 720px;
+}
+
+/*********/
+/* POPUP */
+/*********/
+.fontPopUp {
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popUp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 25%;
+
+    background-color: #FFFFFF;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1em 3em;
+}
+
+.popUp h5 {
+    margin: 0;
+
+    font-size: 1em;
+}
+
+.messagePopUp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.messagePopUp p {
+    width: 80%;
+}
+
+.cookiePopUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boutonPopUp button {
+    background-color: #000000;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.3em 1em;
+    
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/*-------------------------------------*/
+/* POINT DE RUPTURE POUR UN SMARTPHONE */
+/*-------------------------------------*/
+@media (max-width: 600px) { 
+
+    /***********************************/
+    /* SECTION PRESENTATION 4 ARTISTES */
+    /***********************************/
+    .conteneurArtiste {
+        flex-direction: column;   
+    }
+
+    .boxArtiste {
+        width: 100%;
+    }
+
+    /*******************************/
+    /* SECTION ACTUALITES ET VIDEO */
+    /*******************************/
+
+    /* ACTUALITES */
+    .conteneurActualite {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* VIDEO */
+    .video iframe {
+        height: 335px;
+    }
+
+    /**********/
+    /* POP UP */
+    /**********/
+    .popUp {
+        width: 50%;
+    }
+
+}

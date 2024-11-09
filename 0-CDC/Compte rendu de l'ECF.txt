@@ -1,0 +1,38 @@
+PAGE ACCUEIL
+   HTML VU
+   CSS VU
+   Responsive VU (Point de rupture mobile à 600px)
+   JS VU
+     Test Mail VU
+     Fleche vers le haut de page VU
+     PopUp VU (Ajout d'un contrôle au 1er chargement, si Accepter le popUp ne revient plus. Il faudra vider le cache.)
+
+PAGE EVENEMENT
+   HTML VU
+   CSS VU
+   Responsive VU (Point de rupture mobile à 600px + Utilisation de la propriété flex-wrap)
+   JS VU
+     Test Mail VU
+     Fleche vers le haut de page VU
+
+PAGE CONTACT
+   Wireframe Tablette papier VU
+   Wireframe Smartphone papier VU
+
+   J'ai tenté avec Figma mais pas à l'aise, je suis revenu à la version papier.
+
+
+COMPLEMENTS
+   style.css : C'est le style que l'on retrouve dans les 2 pages.
+   index.css pour la page accueil
+   evenements.css pour la page évènement
+
+   script.js : C'est le style que l'on retrouve dans les 2 pages.
+   index.js pour la page accueil
+
+   J'ai ajouté un bout de JS pour afficher le page qui est active dans le menu.
+
+
+
+
+	

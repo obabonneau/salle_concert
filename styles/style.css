@@ -1,0 +1,271 @@
+/*****************/ 
+/* STYLE GENERAL */
+/*****************/
+#wrapper {
+    max-width: 1280px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h5, p, a, label, figcaption {
+    font-family: "Maven Pro", sans-serif;
+}
+
+/*********************/
+/* STYLE DE L'ENTETE */
+/*********************/
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #131313;
+}
+
+.menu {
+    display: flex;
+    gap: 1em; 
+
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+}
+
+.menu a {   
+    color: #FFFFFF;
+    padding: 0.5em 0;
+    text-decoration: none;
+}
+
+.menuActif {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.logoBis {
+    transform: scale(-1, 1);
+}
+
+/*****************/
+/* STYLE DU PIED */
+/*****************/
+
+/** RESEAUX SOCIAUX ET NEWSLETTER **/
+.reseauxNewsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2em 1em;
+
+    background-color: #131313;
+}
+
+/* RESEAUX SOCIAUX */
+.reseauxSociaux p {
+    margin-top: 0;
+
+    color: #FFFFFF;
+}
+
+.reseauxSociaux div {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.reseauxSociaux i {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+#formulaire {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#formulaire label {
+    color: #FFFFFF;
+}
+
+#formulaire div {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 50%;
+}
+
+#formulaire input[type="email"] {    
+    width: 75%;
+    
+    border: none;
+    padding: 0.5em;
+    margin: 0 1em 0 0;
+    
+    background-color: #303030;
+    
+    color: #FFFFFF;
+    font-size: 0.8em;
+}
+
+#formulaire button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 2em;
+    height: 2em;
+
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 50%;   
+
+    font-size: 1em;
+
+    cursor: pointer;
+}
+
+.newsletter p {
+    display: none;
+
+    margin: 0.5em 0 0 0;
+
+    color: #FF0000;
+    text-align: center;
+}
+
+/** MENU ET COPYRIGHT **/
+.menuCopyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1em;
+
+    background-color: #303030;
+
+    color: #FFFFFF;
+}
+
+/* MENU */
+/* Le pied reprend les propriétés du header */
+
+/****************************/
+/* FLECHE SCROLL HAUT PAGE  */
+/****************************/
+.flecheScroll {
+    visibility: hidden;
+    transition: visibility 0.5s;
+
+    position: fixed;
+    bottom: 9.5%;
+    right: 9.5%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    width: 1.5em;
+    height: 1.5em;
+
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    
+    background-color: #303030;
+    
+    color: #FFFFFF;
+    font-size: 2em;
+
+    cursor: pointer;
+}
+
+/*-------------------------------------*/
+/* POINT DE RUPTURE POUR UN SMARTPHONE */
+/*-------------------------------------*/
+@media (max-width: 600px) { 
+
+    /*********************/
+    /* STYLE DE L'ENTETE */
+    /*********************/
+    .entete {
+        padding: 1em 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 0;  
+    }
+
+    .menu a {
+        padding: 0;
+    }
+
+    /*****************/
+    /* STYLE DU PIED */
+    /*****************/
+
+    /** RESEAUX SOCIAUX ET NEWSLETTER **/
+    .reseauxNewsletter {
+        flex-direction: column;
+    }
+
+    /* RESEAUX SOCIAUX */
+    .reseauxSociaux {
+        margin-bottom: 2em;
+    }
+
+    /* NEWSLETTER */
+    .newsletter {
+        width: 100%;
+    }
+
+    #formulaire {
+        flex-direction: column;       
+    }
+
+    #formulaire label {
+        margin-bottom: 1em;
+    }
+
+    #formulaire div {
+        display: flex;
+        justify-content: center;
+        width: 100%
+    }
+
+    #formulaire input[type="email"] {    
+        width: 60%;
+    }
+
+    /** MENU ET COPYRIGHT **/
+    .menuCopyright {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* COPYRIGHT */
+    .menuCopyright p {
+        margin: 1.5em 0;
+    }
+
+    /***************************/
+    /* FLECHE SCROLL HAUT PAGE */
+    /***************************/
+    .flecheScroll {    
+        bottom: 5%;
+        right: 5%;
+    }
+}
